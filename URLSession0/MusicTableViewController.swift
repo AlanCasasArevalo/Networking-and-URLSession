@@ -12,9 +12,20 @@ let cellID = "reuseCell"
 
 class MusicTableViewController: UITableViewController {
 
+    let musicProvider = MusicProvider()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
 
+        musicProvider.getResultsFromiTunesAPI(termToSearch: "sting") { (itunesTrack) in
+            
+            print(itunesTrack)
+            
+        }
+    
+        
+        
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 

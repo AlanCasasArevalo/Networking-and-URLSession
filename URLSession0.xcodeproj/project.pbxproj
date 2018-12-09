@@ -7,14 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5193F37121BD821D006CA886 /* iTunesTrack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5193F37021BD821D006CA886 /* iTunesTrack.swift */; };
 		51C5E89621BD196200205A54 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51C5E89521BD196200205A54 /* AppDelegate.swift */; };
 		51C5E89B21BD196200205A54 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 51C5E89921BD196200205A54 /* Main.storyboard */; };
 		51C5E89D21BD196300205A54 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 51C5E89C21BD196300205A54 /* Assets.xcassets */; };
 		51C5E8A021BD196300205A54 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 51C5E89E21BD196300205A54 /* LaunchScreen.storyboard */; };
 		51C5E8A821BD198D00205A54 /* MusicTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51C5E8A721BD198D00205A54 /* MusicTableViewController.swift */; };
+		51C5E8AA21BD1B6700205A54 /* MusicProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51C5E8A921BD1B6700205A54 /* MusicProvider.swift */; };
+		51C5E8AE21BD1BBB00205A54 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51C5E8AD21BD1BBB00205A54 /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5193F37021BD821D006CA886 /* iTunesTrack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iTunesTrack.swift; sourceTree = "<group>"; };
 		51C5E89221BD196200205A54 /* URLSession0.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = URLSession0.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		51C5E89521BD196200205A54 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		51C5E89A21BD196200205A54 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -22,6 +26,8 @@
 		51C5E89F21BD196300205A54 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		51C5E8A121BD196300205A54 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		51C5E8A721BD198D00205A54 /* MusicTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicTableViewController.swift; sourceTree = "<group>"; };
+		51C5E8A921BD1B6700205A54 /* MusicProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicProvider.swift; sourceTree = "<group>"; };
+		51C5E8AD21BD1BBB00205A54 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +41,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5193F37221BD8228006CA886 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				5193F37021BD821D006CA886 /* iTunesTrack.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		51C5E88921BD196200205A54 = {
 			isa = PBXGroup;
 			children = (
@@ -57,11 +71,30 @@
 				51C5E89521BD196200205A54 /* AppDelegate.swift */,
 				51C5E89921BD196200205A54 /* Main.storyboard */,
 				51C5E8A721BD198D00205A54 /* MusicTableViewController.swift */,
+				5193F37221BD8228006CA886 /* Models */,
+				51C5E8AF21BD1BBE00205A54 /* Utils */,
+				51C5E8AB21BD1B9F00205A54 /* Provider */,
 				51C5E89C21BD196300205A54 /* Assets.xcassets */,
 				51C5E89E21BD196300205A54 /* LaunchScreen.storyboard */,
 				51C5E8A121BD196300205A54 /* Info.plist */,
 			);
 			path = URLSession0;
+			sourceTree = "<group>";
+		};
+		51C5E8AB21BD1B9F00205A54 /* Provider */ = {
+			isa = PBXGroup;
+			children = (
+				51C5E8A921BD1B6700205A54 /* MusicProvider.swift */,
+			);
+			path = Provider;
+			sourceTree = "<group>";
+		};
+		51C5E8AF21BD1BBE00205A54 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				51C5E8AD21BD1BBB00205A54 /* Constants.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,8 +168,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				51C5E8AA21BD1B6700205A54 /* MusicProvider.swift in Sources */,
+				5193F37121BD821D006CA886 /* iTunesTrack.swift in Sources */,
 				51C5E89621BD196200205A54 /* AppDelegate.swift in Sources */,
 				51C5E8A821BD198D00205A54 /* MusicTableViewController.swift in Sources */,
+				51C5E8AE21BD1BBB00205A54 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
